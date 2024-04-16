@@ -9,11 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+   
+    @IBOutlet weak var sagmentout: UISegmentedControl!
+    
+    @IBOutlet weak var lableforans: UILabel!
+    @IBAction func SelectedSagment(_ sender: Any) {
+        
+        
     }
-
-
+    
 }
 
