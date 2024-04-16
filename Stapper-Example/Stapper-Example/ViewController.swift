@@ -14,6 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var lableforvalue: UILabel!
+    
+   
+    @IBAction func changeValue(_ sender: UIStepper) {
+        
+        
+        lableforvalue.text = Int(sender.value).description
+    }
 }
 
