@@ -1,24 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBoutlate_actions_CollectionsofBOTH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jp6-Xq-CRg">
+                                <rect key="frame" x="162.66666666666666" y="281" width="68" height="290"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9u1-1K-2M2">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="phone-filled"/>
+                                        <connections>
+                                            <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xa8-Sn-exw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqb-r5-TRE">
+                                        <rect key="frame" x="0.0" y="58" width="68" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="camera"/>
+                                        <connections>
+                                            <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5Q-Fu-MWt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gix-AP-OrE">
+                                        <rect key="frame" x="0.0" y="116" width="68" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="rabit"/>
+                                        <connections>
+                                            <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yE-6T-T06"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gD-lc-RRE">
+                                        <rect key="frame" x="0.0" y="174" width="68" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="message"/>
+                                        <connections>
+                                            <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zYt-eq-bBo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDr-hT-T0w">
+                                        <rect key="frame" x="0.0" y="232" width="68" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="tortoise"/>
+                                        <connections>
+                                            <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TON-cg-gPe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jp6-Xq-CRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C0L-fA-XkO"/>
+                            <constraint firstItem="Jp6-Xq-CRg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IwG-Qv-O7S"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="buttons" destination="9u1-1K-2M2" collectionClass="NSMutableArray" id="iOT-n5-gCe"/>
+                        <outletCollection property="buttons" destination="Vqb-r5-TRE" collectionClass="NSMutableArray" id="LVS-OK-m4L"/>
+                        <outletCollection property="buttons" destination="gix-AP-OrE" collectionClass="NSMutableArray" id="yDP-f9-Bht"/>
+                        <outletCollection property="buttons" destination="3gD-lc-RRE" collectionClass="NSMutableArray" id="LRE-C5-S8Y"/>
+                        <outletCollection property="buttons" destination="oDr-hT-T0w" collectionClass="NSMutableArray" id="Ioz-J6-VXN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="23" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="44" height="44"/>
+        <image name="message" width="44" height="44"/>
+        <image name="phone-filled" width="44" height="44"/>
+        <image name="rabit" width="44" height="44"/>
+        <image name="tortoise" width="44" height="44"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
