@@ -16,80 +16,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jp6-Xq-CRg">
-                                <rect key="frame" x="162.66666666666666" y="281" width="68" height="290"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6mf-28-S3e">
+                                <rect key="frame" x="169" y="251" width="55" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9u1-1K-2M2">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="58"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="phone-filled"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="70"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="phone-filled">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected" image="phone"/>
                                         <connections>
                                             <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xa8-Sn-exw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqb-r5-TRE">
-                                        <rect key="frame" x="0.0" y="58" width="68" height="58"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="camera"/>
+                                        <rect key="frame" x="0.0" y="70" width="55" height="70"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="camera"/>
+                                        <state key="selected" image="camera-filled"/>
                                         <connections>
                                             <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5Q-Fu-MWt"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDr-hT-T0w">
+                                        <rect key="frame" x="0.0" y="140" width="55" height="70"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="tortoise"/>
+                                        <connections>
+                                            <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TON-cg-gPe"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gix-AP-OrE">
-                                        <rect key="frame" x="0.0" y="116" width="68" height="58"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="rabit"/>
+                                        <rect key="frame" x="0.0" y="210" width="55" height="70"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="rabit"/>
+                                        <state key="selected" image="rabit-filled"/>
                                         <connections>
                                             <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yE-6T-T06"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gD-lc-RRE">
-                                        <rect key="frame" x="0.0" y="174" width="68" height="58"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="message"/>
+                                        <rect key="frame" x="0.0" y="280" width="55" height="70"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="message"/>
+                                        <state key="selected" image="message-filled"/>
                                         <connections>
                                             <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zYt-eq-bBo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDr-hT-T0w">
-                                        <rect key="frame" x="0.0" y="232" width="68" height="58"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="tortoise"/>
-                                        <connections>
-                                            <action selector="buttonactionofstatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TON-cg-gPe"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="0Gt-IY-ScO"/>
+                                    <constraint firstAttribute="width" constant="55" id="sM1-6F-GXn"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Jp6-Xq-CRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C0L-fA-XkO"/>
-                            <constraint firstItem="Jp6-Xq-CRg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IwG-Qv-O7S"/>
+                            <constraint firstItem="6mf-28-S3e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9a-lq-0Z0"/>
+                            <constraint firstItem="6mf-28-S3e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rn7-nG-bkG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outletCollection property="buttons" destination="9u1-1K-2M2" collectionClass="NSMutableArray" id="iOT-n5-gCe"/>
                         <outletCollection property="buttons" destination="Vqb-r5-TRE" collectionClass="NSMutableArray" id="LVS-OK-m4L"/>
+                        <outletCollection property="buttons" destination="oDr-hT-T0w" collectionClass="NSMutableArray" id="Ioz-J6-VXN"/>
                         <outletCollection property="buttons" destination="gix-AP-OrE" collectionClass="NSMutableArray" id="yDP-f9-Bht"/>
                         <outletCollection property="buttons" destination="3gD-lc-RRE" collectionClass="NSMutableArray" id="LRE-C5-S8Y"/>
-                        <outletCollection property="buttons" destination="oDr-hT-T0w" collectionClass="NSMutableArray" id="Ioz-J6-VXN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23" y="-2"/>
+            <point key="canvasLocation" x="22.137404580152669" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera" width="44" height="44"/>
+        <image name="camera-filled" width="44" height="44"/>
         <image name="message" width="44" height="44"/>
+        <image name="message-filled" width="44" height="44"/>
+        <image name="phone" width="44" height="44"/>
         <image name="phone-filled" width="44" height="44"/>
         <image name="rabit" width="44" height="44"/>
+        <image name="rabit-filled" width="44" height="44"/>
         <image name="tortoise" width="44" height="44"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
