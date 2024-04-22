@@ -16,14 +16,22 @@ extension String {
     }
     //MARK: For Valid Password
     var isValidPassword : Bool {
-        let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
+        let passwordRegex = "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}$"
         let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
         return passwordPredicate.evaluate(with: self)
     }
     //MARK: For Valid Phone Nubmber
     var isValidPhone: Bool {
-        let regularExpressionForPhone = "^\\d{3}-\\d{3}-\\d{4}$"
-        let testPhone = NSPredicate(format:"SELF MATCHES %@", regularExpressionForPhone)
-        return testPhone.evaluate(with: self)
+        do {
+            let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.phoneNumber.rawValue)
+            let metch = detector.matches(in: self, options: [] ,range: NSMakeRange(0, self.count))
+            if let result = metch.first {
+                return result.resultType == .phoneNumber && result.range.location == 0 && result.range.length == self.count && self.count == 10
+            }else{
+                return false
+            }
+        } catch {
+            return false
+        }
     }
 }
