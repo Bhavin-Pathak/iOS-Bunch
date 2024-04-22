@@ -35,6 +35,9 @@
                                 <rect key="frame" x="15" y="336" width="363" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Submite"/>
+                                <connections>
+                                    <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7QJ-Dm-wVJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -54,6 +57,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C1u-yj-cKW" secondAttribute="trailing" constant="15" id="xXG-bI-eNa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailtF" destination="QXS-sB-Q6L" id="Qea-ba-w9a"/>
+                        <outlet property="passwordtF" destination="73V-9I-6T9" id="3DJ-Tj-9ea"/>
+                        <outlet property="phonetF" destination="MtN-Qt-TUw" id="Pza-NE-oYD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
