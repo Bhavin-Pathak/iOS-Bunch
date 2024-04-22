@@ -54,6 +54,12 @@
                             <constraint firstItem="LLu-2s-9E4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="wTU-Gs-8yQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tf1" destination="lfE-eb-WMO" id="bvi-3O-wZJ"/>
+                        <outlet property="tf2" destination="LLu-2s-9E4" id="SxW-KQ-N31"/>
+                        <outlet property="tf3" destination="Bgu-mr-1ET" id="omm-vP-aes"/>
+                        <outlet property="tf4" destination="0Be-Qu-jxr" id="RoO-K2-uCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
