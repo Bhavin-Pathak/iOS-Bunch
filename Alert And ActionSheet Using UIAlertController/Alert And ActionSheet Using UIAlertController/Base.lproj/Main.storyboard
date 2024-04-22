@@ -21,12 +21,18 @@
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Open Alert" cornerStyle="large" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="openAleart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJS-Us-8jD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4f-El-7ty">
                                 <rect key="frame" x="115" y="447" width="163" height="35"/>
                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Open ActionSheet" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="openActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="072-Gw-HnP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
