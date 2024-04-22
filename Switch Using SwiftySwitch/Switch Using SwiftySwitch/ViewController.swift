@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, SwiftySwitchDelegate {
+    
     func valueChanged(sender: SwiftySwitch) {
         if switchTo.isOn{
             view.backgroundColor = UIColor(ciColor: .blue)
@@ -15,7 +16,6 @@ class ViewController: UIViewController, SwiftySwitchDelegate {
             view.backgroundColor = UIColor(ciColor: .red)
         }
     }
-    
 
     @IBOutlet weak var switchTo: SwiftySwitch!
     
