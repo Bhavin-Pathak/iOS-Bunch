@@ -1,3 +1,3 @@
 # iOS-Bunch 
 
-A collections of iOS Widgets (UIKIT,SWIFTUI)
+A collections of iOS Widgets (UIKIT-SWIFTUI)
