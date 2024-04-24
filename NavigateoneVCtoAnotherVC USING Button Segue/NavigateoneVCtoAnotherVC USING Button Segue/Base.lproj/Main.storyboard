@@ -86,13 +86,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfx-iC-wvm">
-                                <rect key="frame" x="153" y="409" width="88" height="35"/>
+                                <rect key="frame" x="101" y="379" width="189" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemTealColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go Back" cornerStyle="large"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go To Second Screen" cornerStyle="large"/>
                                 <connections>
-                                    <action selector="navigateToMainScreen:" destination="ZYx-jC-GE5" eventType="touchUpInside" id="rhq-tr-2h4"/>
+                                    <action selector="navigateToSecondVC:" destination="ZYx-jC-GE5" eventType="touchUpInside" id="k5o-UQ-5Pk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vO-Tp-0NK">
+                                <rect key="frame" x="100" y="438" width="192" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back To Home Screen" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="navigateToMainScreen:" destination="ZYx-jC-GE5" eventType="touchUpInside" id="GFA-6d-jQd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -130,6 +140,9 @@
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
