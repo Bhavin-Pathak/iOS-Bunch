@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -37,7 +37,7 @@
         <!--Second Screen-->
         <scene sceneID="QyT-nn-7dc">
             <objects>
-                <viewController storyboardIdentifier="SecondScreen" title="Second Screen" id="RpI-PY-nwR" customClass="SecondScreen" customModule="NavigateoneVCtoAnotherVC_USING_Button_Segue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondScreen" id="RpI-PY-nwR" customClass="SecondScreen" customModule="NavigateoneVCtoAnotherVC_USING_Button_Segue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T3U-vy-zRu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
         <!--Third Screen-->
         <scene sceneID="bSo-zD-Qud">
             <objects>
-                <viewController storyboardIdentifier="ThirdScreen" title="Third Screen" id="ZYx-jC-GE5" customClass="ThirdScreen" customModule="NavigateoneVCtoAnotherVC_USING_Button_Segue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdScreen" id="ZYx-jC-GE5" customClass="ThirdScreen" customModule="NavigateoneVCtoAnotherVC_USING_Button_Segue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wfz-cG-sa3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,21 +99,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJ3-0o-5fp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2190" y="4"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="lLI-9n-MtU">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dVH-8H-r2H" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O1i-7y-ULQ">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rF6-Xa-mf8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
