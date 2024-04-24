@@ -15,4 +15,8 @@ class ThirdScreen: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func navigateToMainScreen(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
