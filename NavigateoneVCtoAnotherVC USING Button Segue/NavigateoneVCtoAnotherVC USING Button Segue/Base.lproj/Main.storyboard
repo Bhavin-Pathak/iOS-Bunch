@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6kl-jh-4KH">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -23,6 +23,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Navigate To Second Screen" cornerStyle="large">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="navigateToSecondVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="id2-nU-Ouj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -32,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="4"/>
+            <point key="canvasLocation" x="1611" y="4"/>
         </scene>
         <!--Second Screen-->
         <scene sceneID="QyT-nn-7dc">
@@ -50,6 +53,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Navigate To Third Screen" cornerStyle="large">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="navigatetoThirdVC:" destination="RpI-PY-nwR" eventType="touchUpInside" id="xHI-HP-CJa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj3-Or-TXG">
                                 <rect key="frame" x="88" y="450" width="217" height="35"/>
@@ -57,6 +63,9 @@
                                 <color key="tintColor" systemColor="systemPurpleColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Navigate To Main Screen " cornerStyle="large"/>
+                                <connections>
+                                    <action selector="navigateToMainScreen:" destination="RpI-PY-nwR" eventType="touchUpInside" id="MJr-NY-v9d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lz9-IW-Mey"/>
@@ -66,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suI-N0-67D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1523" y="4"/>
+            <point key="canvasLocation" x="2341" y="4"/>
         </scene>
         <!--Third Screen-->
         <scene sceneID="bSo-zD-Qud">
@@ -82,6 +91,9 @@
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Navigae To Second Screen" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="navigateToSecondVC:" destination="ZYx-jC-GE5" eventType="touchUpInside" id="28f-5w-hVh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfx-iC-wvm">
                                 <rect key="frame" x="87" y="449" width="219" height="35"/>
@@ -89,6 +101,9 @@
                                 <color key="tintColor" systemColor="systemTealColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Navigatte To Main Screen" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="navigateToMainScreen:" destination="ZYx-jC-GE5" eventType="touchUpInside" id="rhq-tr-2h4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5it-9g-u5l"/>
@@ -98,7 +113,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJ3-0o-5fp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2190" y="4"/>
+            <point key="canvasLocation" x="3109" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zk0-0F-Y3H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6kl-jh-4KH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XzC-YT-bXB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="p1z-qb-Y9p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27y-At-KCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="4"/>
         </scene>
     </scenes>
     <resources>
