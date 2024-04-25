@@ -33,12 +33,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="saveContinue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLl-h9-QKa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Screen" id="awQ-on-R7e"/>
+                    <connections>
+                        <outlet property="emailAdddress" destination="fej-wl-dkw" id="Sd8-lc-jIl"/>
+                        <outlet property="userName" destination="n1I-Yf-CaJ" id="QsV-Xa-jaI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,6 +85,10 @@
                         <viewLayoutGuide key="safeArea" id="8fc-aO-a2J"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
+                    <connections>
+                        <outlet property="lblEmail" destination="Ryx-zG-FOL" id="VJU-Ku-jF8"/>
+                        <outlet property="lblUserName" destination="vQU-Lc-H77" id="Z3O-gw-t3I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYw-VY-crn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
