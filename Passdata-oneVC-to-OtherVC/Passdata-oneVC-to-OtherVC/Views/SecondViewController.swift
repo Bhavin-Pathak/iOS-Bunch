@@ -8,22 +8,23 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    
+    //MARK: Outlets
+    @IBOutlet weak var lblUserName: UILabel!
+    @IBOutlet weak var lblEmail: UILabel!
+    
+    //MARK: Vaiables That Holds Email And Name Data
+    
+    var name: String = ""
+    var email: String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lblUserName.text = name
+        lblEmail.text = email
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
