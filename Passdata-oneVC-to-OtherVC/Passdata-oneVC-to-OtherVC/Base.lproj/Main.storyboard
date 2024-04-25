@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="1061.8320610687022" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="y1x-ij-o20">
             <objects>
-                <viewController id="qeg-na-2GA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="qeg-na-2GA" customClass="SecondViewController" customModule="Passdata_oneVC_to_OtherVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MMG-zM-oOi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
