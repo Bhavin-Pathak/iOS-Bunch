@@ -6,8 +6,9 @@
 //
 
 import UIKit
+    //MARK: Passing Delegate --------->
+class ViewController: UIViewController, DataPassing {
 
-class ViewController: UIViewController {
 
     //MARK: Outlets
     @IBOutlet weak var lblName: UILabel!
@@ -21,7 +22,17 @@ class ViewController: UIViewController {
 
     //MARK: Function Or Action OnTap Submite Form Button 
     @IBAction func formButtton(_ sender: Any) {
-        //MARK: Navigation
+        //MARK: Navigation to secondScreen
+        let secVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        secVC.deligate = self
+        self.navigationController?.pushViewController(secVC, animated: true)
     }
+    //MARK: Delegate Method
+    func passData(name: String, email: String, address: String) {
+        lblName.text = name
+        lblEmail.text = email
+        lblAddress.text = address //MARK: Assign Labletext Values To Function Perameters
+    }
+    
 }
 
