@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.9.1)
+  - PureLayout (3.1.9)
+  - SDWebImage (5.18.7):
+    - SDWebImage/Core (= 5.18.7)
+  - SDWebImage/Core (5.18.7)
+
+DEPENDENCIES:
+  - Alamofire
+  - PureLayout
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PureLayout
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
+  SDWebImage: f9258c58221ed854cfa0e2b80ee4033710b1c6d3
+
+PODFILE CHECKSUM: 98b84fe1c82983063489ca59270552a5b1b57f19
+
+COCOAPODS: 1.15.0
