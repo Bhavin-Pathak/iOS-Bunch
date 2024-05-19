@@ -20,7 +20,7 @@ class classAPI: SchoolDirectory{
     //MARK: GetAllSchool Data Nested Function
     func getAllSchool(compilition : @escaping(sucessSchoolListAPIResponse) ) {
         //TODO: Alamofire Request
-        AF.request(Constants.schoolListURL).validate().responseDecodable(of: [School].self) { result in
+        AF.request(APIConstants.schoolListURL).validate().responseDecodable(of: [School].self) { result in
             switch result.result{
             case .failure(let error):
                 compilition(.failure(.networkingError(error.localizedDescription)))
@@ -72,7 +72,7 @@ class classAPI: SchoolDirectory{
     //MARK: Alamofire API Implimentation Here
     func getDataUsingAlamofire() {
         //TODO: Alamofire Request
-        AF.request(Constants.schoolListURL).validate().responseDecodable(of: [School].self) { result in
+        AF.request(APIConstants.schoolListURL).validate().responseDecodable(of: [School].self) { result in
             switch result.result{
             case .failure(let error):
                 break

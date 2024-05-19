@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
- struct Constants {
+//MARK: API-PATH
+ struct APIConstants {
   static let schoolListURL = "https://data.cityofnewyork.us/resource/s3k6-pzi2.json?$$app_token=L1KwLSwm1yz1N7aWqFCF4dLmM"
 }
 
