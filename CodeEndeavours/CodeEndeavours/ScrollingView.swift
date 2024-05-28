@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ScrollingView: View {
     var body: some View {
-        ScrollView{
-            VStack{
+        ScrollView(.horizontal, showsIndicators: false){
+            HStack{
                 ForEach(1..<50){ index in
                     Text("\(index)")
                         .frame(width: 100, height: 100)
