@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct TextsEG: View {
-    
     var body: some View {
+        //MARK: TEXTView That Using Text Widget
        Text("Hello World!!")
+        
     }
 }
 
@@ -19,3 +20,4 @@ struct TextsEG_Previews: PreviewProvider {
         TextsEG()
     }
 }
+
