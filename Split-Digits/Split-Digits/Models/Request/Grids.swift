@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Box: Identifiable {
+struct Grids: Identifiable {
     let id = UUID()
     let value: Int
     var isRevealed: Bool = false

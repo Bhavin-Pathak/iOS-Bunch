@@ -11,7 +11,7 @@ import SwiftUI
 struct Split_DigitsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameScreen()
         }
     }
 }
