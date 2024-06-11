@@ -27,7 +27,7 @@ struct GridBoxView: View {
             }
         }
         .frame(width: 50, height: 50)
-        .cornerRadius(20)
+        .cornerRadius(2)
         .animation(.default)
     }
 }
