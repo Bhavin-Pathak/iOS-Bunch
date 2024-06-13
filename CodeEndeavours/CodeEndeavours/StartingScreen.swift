@@ -13,7 +13,6 @@ struct StartingScreen: View {
             .resizable()
             .frame(width: 50,height: 50)
             .foregroundColor(.indigo)
-            .bold()
     }
 }
 
